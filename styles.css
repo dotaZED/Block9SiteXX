@@ -1,114 +1,141 @@
 /* Resetting some default styles */
 
-
 /* Setting default font family and color */
 body {
-  font-family: Arial, sans-serif;
-  color: #ccc;
-  background-color: #222;
-}
-
-/* Styling the navigation bar */
-nav {
-  background-color: #222;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 10px;
-  padding: 5px;
-  font-size: 18px;
-}
-
-nav a:hover {
-  background-color: #00d9ff;
-}
-
-/* Styling the sections */
-section {
-  background-color: #333;
-  padding: 20px;
-  
-}
-
-section:first-of-type {
-  margin-top: 0;
-}
-
-section h2 {
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 36px;
-}
-
-section ul {
-  margin-top: 10px;
-}
-
-section li {
-  margin-bottom: 10px;
-}
-
-section img {
-  max-width: 100%;
-  max-height: 200px;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-/* Media query for responsive nav bar */
-@media screen and (max-width: 480px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    color: #ccc;
+    background-color: #222;
   }
-
+  
+  /* Styling the navigation bar */
+  nav {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
   nav a {
-    margin-right: 0;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    background-color: #00d9ff;
+  }
+  
+  /* Styling the banner */
+  .banner {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 60px; /* Adjust this value based on the height of your nav bar */
+  }
+  
+      
+      .collage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        padding: 10px;
+        margin: 0 auto;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+      }
+      
+      .collage img {
+        width: calc(33.33% - 10px);
+        height: calc(50% - 10px);
+        object-fit: cover;
+        object-position: center;
+      }
+  
+  /* Styling the sections */
+  section {
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  section:first-of-type {
+    margin-top: 0;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 36px;
+  }
+  
+  section ul {
+    margin-top: 10px;
+  }
+  
+  section li {
     margin-bottom: 10px;
   }
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  color: #ccc;
-  font-size: 14px;
-  padding: 12px;
-}
-
-footer a {
-  color: #00d9ff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer span {
-  display: inline-block;
-  margin-right: 8px;
-}
-
-footer i {
-  font-size: 16px;
-  margin-right: 4px;
-}
+  
+  section img {
+    max-width: 100%;
+    max-height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Media query for responsive nav bar */
+  @media screen and (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    nav a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #ccc;
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  footer a {
+    color: #00d9ff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer span {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  footer i {
+    font-size: 16px;
+    margin-right: 4px;
+  }
+  
