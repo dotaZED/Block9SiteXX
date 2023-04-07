@@ -1,9 +1,5 @@
 /* Resetting some default styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Setting default font family and color */
 body {
@@ -41,7 +37,7 @@ nav a:hover {
 section {
   background-color: #333;
   padding: 20px;
-  margin-top: 70px;
+  
 }
 
 section:first-of-type {
