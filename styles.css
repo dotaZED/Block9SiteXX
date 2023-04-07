@@ -59,8 +59,8 @@ section li {
 
 section img {
   max-width: 100%;
-  height: auto;
-  position: absolute;
+  max-height: 200px;
+  position: relative;
   top: 0;
   left: 0;
 }
