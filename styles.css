@@ -8,12 +8,13 @@
 /* Setting default font family and color */
 body {
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #ccc;
+  background-color: #222;
 }
 
 /* Styling the navigation bar */
 nav {
-  background-color: navy;
+  background-color: #222;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,22 +22,24 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin-right: 10px;
   padding: 5px;
+  font-size: 18px;
 }
 
 nav a:hover {
-  background-color: lightblue;
+  background-color: #00d9ff;
 }
 
 /* Styling the sections */
 section {
-  background-color: #f2f2f2;
+  background-color: #333;
   padding: 20px;
   margin-top: 70px;
 }
@@ -46,7 +49,9 @@ section:first-of-type {
 }
 
 section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 36px;
 }
 
 section ul {
@@ -78,18 +83,19 @@ section img {
     margin-bottom: 10px;
   }
 }
+
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #15202b;
-  color: #8899a6;
+  background-color: #222;
+  color: #ccc;
   font-size: 14px;
   padding: 12px;
 }
 
 footer a {
-  color: #1da1f2;
+  color: #00d9ff;
   text-decoration: none;
 }
 
