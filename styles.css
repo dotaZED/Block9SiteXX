@@ -1,0 +1,80 @@
+/* Resetting some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting default font family and color */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Styling the navigation bar */
+nav {
+  background-color: navy;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: lightblue;
+}
+
+/* Styling the sections */
+section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+section ul {
+  margin-top: 10px;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Media query for responsive nav bar */
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  nav a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
