@@ -42,6 +42,52 @@
 			font-weight: bold;
 			text-align: center;
 		}
+    .portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  flex-basis: 40%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item .text-container {
+  flex-basis: 55%;
+  padding: 20px;
+  text-align: left;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232f3e;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 	</style>
 </head>
 <body>
@@ -77,5 +123,7 @@
 		</div>
 		<!-- Add more portfolio items as needed -->
 	</div>
+
+  <footer>OSIAN WIZARDS</footer>
 </body>
 </html>
