@@ -78,3 +78,35 @@ section img {
     margin-bottom: 10px;
   }
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15202b;
+  color: #8899a6;
+  font-size: 14px;
+  padding: 12px;
+}
+
+footer a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+footer i {
+  font-size: 16px;
+  margin-right: 4px;
+}
