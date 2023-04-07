@@ -41,7 +41,7 @@ body {
   }
   
       
-.collage {
+      .collage {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -138,69 +138,4 @@ body {
     font-size: 16px;
     margin-right: 4px;
   }
-  @media screen and (max-width: 480px) {
-  .collage img {
-    width: 100%;
-    height: auto;
-  }
-}
-.form-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #222;
-  color: #fff;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-label {
-  display: block;
-  margin-right: 10px;
-  font-size: 18px;
-}
-
-input[type="email"] {
-  flex: 1;
-  padding: 10px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-button[type="submit"] {
-  background-color: #00d9ff;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #0080a3;
-}
   
-@media screen and (max-width: 480px) {
-  form {
-    flex-direction: column;
-  }
-
-  input[type="email"] {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
