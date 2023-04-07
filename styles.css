@@ -41,7 +41,7 @@ body {
   }
   
       
-      .collage {
+.collage {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -138,4 +138,9 @@ body {
     font-size: 16px;
     margin-right: 4px;
   }
-  
+  @media screen and (max-width: 480px) {
+  .collage img {
+    width: 100%;
+    height: auto;
+  }
+}
