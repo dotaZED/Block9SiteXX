@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Page</title>
+	<title>About Me</title>
 	<style>
 		body {
-			background-image: url('https://images.unsplash.com/photo-1680466357571-e2a63c884093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			color: #fff;
 			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
 			margin: 0;
 			padding: 0;
 		}
 
 		header {
-			background-color: rgba(0,0,0,0.5);
+			background-color: #232f3e;
 			color: #fff;
 			padding: 20px;
 			text-align: center;
@@ -27,28 +23,44 @@
 			font-weight: bold;
 		}
 
-		.main-content {
+		.about-me {
 			max-width: 900px;
 			margin: 20px auto;
 			padding: 20px;
-			background-color: rgba(0,0,0,0.7);
+			background-color: #fff;
 			box-shadow: 0px 0px 5px #999;
 		}
 
-		p {
-			font-size: 18px;
-			line-height: 1.5;
-			margin-bottom: 20px;
+		img {
+			display: inline-block;
+			width: 150px;
+			height: 150px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			object-fit: cover;
 		}
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Welcome to my page</h1>
+		<h1>About Me</h1>
 	</header>
 
-	<div class="main-content">
-		<p>This is the main content of my page.</p>
+	<div class="about-me">
+		<h2>Professional Background</h2>
+		<p>Hi there, I'm a professional web developer with a passion for creating user-friendly and responsive web applications. I have expertise in HTML, CSS, JavaScript, and React, and I'm always eager to learn new technologies to improve my skills.</p>
+
+		<h2>Hobbies and Interests</h2>
+		<p>In my free time, I like to stay active by exercising and skateboarding. I also have a passion for photography and enjoy capturing candid moments and landscapes. Here are a few of my favorite shots:</p>
+
+		<div class="images">
+			<img src="https://via.placeholder.com/150x150.png?text=Photo+1" alt="Photo 1">
+			<img src="https://via.placeholder.com/150x150.png?text=Photo+2" alt="Photo 2">
+			<img src="https://via.placeholder.com/150x150.png?text=Photo+3" alt="Photo 3">
+			<img src="https://via.placeholder.com/150x150.png?text=Photo+4" alt="Photo 4">
+			<img src="https://via.placeholder.com/150x150.png?text=Photo+5" alt="Photo 5">
+			<img src="https://via.placeholder.com/150x150.png?text=Photo+6" alt="Photo 6">
+		</div>
 	</div>
 </body>
 </html>
