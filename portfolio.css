@@ -91,7 +91,35 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232f3e;
+    height: 60px;
+    box-shadow: 0px 0px 20px #FF3838;
+    border-radius: 10px;
+  }
+  
+  .glowing-text {
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 0px 0px 10px #FF3838;
+    animation: glowing 2s ease-in-out infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      text-shadow: 0px 0px 10px #FF3838;
+    }
+    50% {
+      text-shadow: 0px 0px 20px #FF3838;
+    }
+    100% {
+      text-shadow: 0px 0px 10px #FF3838;
+    }
+  }
+  
 .banner {
     height: 300px;
     overflow: hidden;
