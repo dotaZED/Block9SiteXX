@@ -132,19 +132,18 @@
   }
   
   /* Define the style of the overlay text */
-.overlay-text {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 5em;
-    font-weight: bold;
-    color: #ff0000; /* Red color */
-    text-align: center;
+  .overlay-text {
     position: absolute;
-    top: 50%;
+    top: -20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Add shadow effect */
-    animation: shake 0.8s linear; /* Add shake animation effect */
+    transform: translateX(-50%);
+    font-family: 'Sin City', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px black;
   }
+  
   
   /* Define the shake animation effect */
   @keyframes shake {
@@ -170,7 +169,16 @@
     box-shadow: 0px 0px 20px #FF3838;
     border-radius: 20px;
   }
-  
+  .banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff0000;
+    font-size: 72px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0 0 10px #000;
+  }
   .scroll-images {
     display: flex;
     position: absolute;
