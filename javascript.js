@@ -1,23 +1,22 @@
 const scrollImages = document.querySelector('.scroll-images');
 const images = document.querySelectorAll('.scroll-images img');
-let width = 0;
 const maxHeight = 300;
 const scrollSpeed = 1;
 
 images.forEach(image => {
-  width += image.clientWidth;
   image.style.height = `${maxHeight}px`;
+  image.style.boxShadow = '0 0 10px rgba(128, 0, 128, 0.8)';
+  image.style.filter = 'drop-shadow(0 0 10px rgba(128, 0, 128, 0.8))';
 });
 
-scrollImages.style.width = `${width}px`;
-scrollImages.style.transform = `translateX(0px)`;
+let width = scrollImages.scrollWidth;
+scrollImages.style.transform = `translateX(-${width / 2}px)`;
 
 let scrollPosition = 0;
 let scrollInterval = setInterval(() => {
   scrollPosition += scrollSpeed;
   scrollImages.style.transform = `translateX(-${scrollPosition}px)`;
-  if (scrollPosition >= images[0].clientWidth) {
-    scrollImages.appendChild(images[0]);
+  if (scrollPosition >= width) {
     scrollPosition = 0;
   }
 }, 20);
@@ -30,8 +29,7 @@ scrollImages.addEventListener('mouseout', () => {
   scrollInterval = setInterval(() => {
     scrollPosition += scrollSpeed;
     scrollImages.style.transform = `translateX(-${scrollPosition}px)`;
-    if (scrollPosition >= images[0].clientWidth) {
-      scrollImages.appendChild(images[0]);
+    if (scrollPosition >= width) {
       scrollPosition = 0;
     }
   }, 20);
