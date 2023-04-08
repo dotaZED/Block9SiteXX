@@ -44,44 +44,38 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-.container {
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .text {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 2rem;
+.opening-credits {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-family: 'Impact', sans-serif;
     text-align: center;
+    animation: opening-credits 10s linear infinite;
   }
   
-  .credit {
-    margin: 0.5rem;
-    opacity: 0;
-    animation: credits 5s ease forwards;
+  .opening-credits h2 {
+    font-size: 48px;
+    margin: 0;
   }
   
-  @keyframes credits {
+  .opening-credits h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  @keyframes opening-credits {
     0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    10% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
+      transform: translateY(0);
     }
     100% {
-      opacity: 0;
       transform: translateY(-100%);
     }
   }
+  
   
 
 .portfolio-item {
