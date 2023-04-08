@@ -195,4 +195,57 @@
     }
   }
   
+  #left-god, #right-god {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url("god-symbol.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  #left-god {
+    left: 0;
+    animation-name: shake-left;
+  }
+  
+  #right-god {
+    right: 0;
+    animation-name: shake-right;
+  }
+  
+  @keyframes shake-left {
+    0% {
+      transform: translateY(-50%) translateX(0);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateY(-50%) translateX(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-50%) translateX(0);
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes shake-right {
+    0% {
+      transform: translateY(-50%) translateX(0);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateY(-50%) translateX(10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-50%) translateX(0);
+      opacity: 0.5;
+    }
+  }
   
