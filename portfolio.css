@@ -44,39 +44,43 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-.container {
-    background-color: #000;
+.box {
+    background: linear-gradient(to right, #6a00ff, #b066fe);
     color: #fff;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+    width: 60%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    font-family: Arial, sans-serif;
     position: relative;
+    overflow: hidden;
   }
   
-  .text {
+  .scroll-text {
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px; /* adjust the font size as needed */
-    animation: scrollCredits 20s linear infinite;
-    animation-direction: reverse; /* set the direction of the animation to reverse */
+    left: 0;
+    width: 100%;
   }
   
-  .text span {
-    display: block;
-    margin: 5px 0;
+  .scroll-text span {
+    display: inline-block;
+    padding: 0 10px;
   }
   
-  @keyframes scrollCredits {
+  @keyframes scroll {
     0% {
-      transform: translateX(0%);
+      transform: translateX(100%);
     }
     100% {
       transform: translateX(-100%);
     }
   }
-  
   
 
 .portfolio-item {
