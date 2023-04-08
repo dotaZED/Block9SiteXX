@@ -1,10 +1,19 @@
 const scrollImages = document.querySelector('.scroll-images');
 const images = document.querySelectorAll('.scroll-images img');
 let width = 0;
+let height = 0;
 images.forEach(image => {
   width += image.clientWidth;
+  if (image.clientHeight > height) {
+    height = image.clientHeight;
+  }
 });
 scrollImages.style.width = `${width}px`;
+scrollImages.style.height = `${height}px`;
+images.forEach(image => {
+  image.style.width = `${width/images.length}px`;
+  image.style.height = `${height}px`;
+});
 
 let scrollPosition = 0;
 setInterval(() => {
