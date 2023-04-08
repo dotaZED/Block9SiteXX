@@ -131,33 +131,23 @@
     text-decoration: underline;
   }
   
-  /* Define the style of the overlay text */
+  .banner {
+    position: relative;
+  }
+  
   .overlay-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: red;
     font-size: 3rem;
-    font-family: 'Bebas Neue', cursive;
-    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px #000;
     text-align: center;
+    z-index: 1;
   }
   
-  @media only screen and (max-width: 600px) {
-    header {
-      height: 100%;
-    }
-    nav {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    nav a {
-      margin: 5px;
-    }
-  }
   
   /* Banner with scrolling images */
   .banner {
