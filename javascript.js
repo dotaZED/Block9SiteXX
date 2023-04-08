@@ -24,4 +24,4 @@ setInterval(() => {
     scrollImages.appendChild(images[0]);
     scrollPosition = 0;
   }
-}, 10);
+}, 30);
