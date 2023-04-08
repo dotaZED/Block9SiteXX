@@ -131,6 +131,36 @@
     text-decoration: underline;
   }
   
+  /* Define the style of the overlay text */
+.overlay-text {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: #ff0000; /* Red color */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Add shadow effect */
+    animation: shake 0.8s linear; /* Add shake animation effect */
+  }
+  
+  /* Define the shake animation effect */
+  @keyframes shake {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    10% { transform: translate(-50%, -50%) rotate(-5deg); }
+    20% { transform: translate(-50%, -50%) rotate(5deg); }
+    30% { transform: translate(-50%, -50%) rotate(-5deg); }
+    40% { transform: translate(-50%, -50%) rotate(5deg); }
+    50% { transform: translate(-50%, -50%) rotate(-5deg); }
+    60% { transform: translate(-50%, -50%) rotate(5deg); }
+    70% { transform: translate(-50%, -50%) rotate(-5deg); }
+    80% { transform: translate(-50%, -50%) rotate(5deg); }
+    90% { transform: translate(-50%, -50%) rotate(-5deg); }
+    100% { transform: translate(-50%, -50%) rotate(0deg); }
+  }
+  
   /* Banner with scrolling images */
   .banner {
     height: 300px;
