@@ -132,17 +132,18 @@
   }
   
   /* Define the style of the overlay text */
-  .overlay-text {
+  .overlay {
     position: absolute;
-    top: -20px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Sin City', sans-serif;
-    font-size: 60px;
-    font-weight: bold;
+    transform: translate(-50%, -50%);
     color: red;
-    text-shadow: 2px 2px black;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Sin City', sans-serif;
   }
+  
   
   
   /* Define the shake animation effect */
