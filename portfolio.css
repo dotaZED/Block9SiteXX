@@ -44,37 +44,28 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-.opening-credits {
+.container {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+  }
+  
+  .text {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    font-family: 'Impact', sans-serif;
-    text-align: center;
-    animation: opening-credits 10s linear infinite;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px; /* adjust the font size as needed */
   }
   
-  .opening-credits h2 {
-    font-size: 48px;
-    margin: 0;
+  .text span {
+    display: block;
+    margin: 5px 0;
   }
   
-  .opening-credits h3 {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-  
-  @keyframes opening-credits {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
-  }
   
   
 
