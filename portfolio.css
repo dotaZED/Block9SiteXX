@@ -52,6 +52,31 @@
     text-align: justify;
   }
   
+  .quote-container {
+    background-color: #1a1a1a;
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Creepster', cursive;
+    text-shadow: 1px 1px #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  .quote img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+  }
   
   h1 {
     font-size: 32px;
