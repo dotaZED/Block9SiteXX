@@ -2,43 +2,37 @@ const scrollImages = document.querySelector('.scroll-images');
 const images = document.querySelectorAll('.scroll-images img');
 let width = 0;
 const maxHeight = 300;
+const scrollSpeed = 1;
 
 images.forEach(image => {
   width += image.clientWidth;
   image.style.height = `${maxHeight}px`;
-  image.style.objectFit = 'cover';
 });
 
 scrollImages.style.width = `${width}px`;
+scrollImages.style.transform = `translateX(0px)`;
 
 let scrollPosition = 0;
-let intervalId = setInterval(() => {
-  scrollPosition++;
+let scrollInterval = setInterval(() => {
+  scrollPosition += scrollSpeed;
   scrollImages.style.transform = `translateX(-${scrollPosition}px)`;
   if (scrollPosition >= images[0].clientWidth) {
     scrollImages.appendChild(images[0]);
     scrollPosition = 0;
   }
-}, 10);
+}, 20);
 
-// Keep scrolling even when window loses focus
-let lastTime = 0;
-const updateInterval = 10;
+scrollImages.addEventListener('mouseover', () => {
+  clearInterval(scrollInterval);
+});
 
-function updateScroll() {
-  const now = Date.now();
-  const deltaTime = now - lastTime;
-  lastTime = now;
-  
-  scrollPosition += deltaTime / updateInterval;
-  scrollImages.style.transform = `translateX(-${scrollPosition}px)`;
-  
-  if (scrollPosition >= images[0].clientWidth) {
-    scrollImages.appendChild(images[0]);
-    scrollPosition = 0;
-  }
-  
-  requestAnimationFrame(updateScroll);
-}
-
-requestAnimationFrame(updateScroll);
+scrollImages.addEventListener('mouseout', () => {
+  scrollInterval = setInterval(() => {
+    scrollPosition += scrollSpeed;
+    scrollImages.style.transform = `translateX(-${scrollPosition}px)`;
+    if (scrollPosition >= images[0].clientWidth) {
+      scrollImages.appendChild(images[0]);
+      scrollPosition = 0;
+    }
+  }, 20);
+});
