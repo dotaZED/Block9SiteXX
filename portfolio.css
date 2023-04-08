@@ -45,34 +45,42 @@ h1 {
     text-align: center;
 }
 .container {
+    background-color: black;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-color: #232f3e;
   }
   
   .text {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
     text-align: center;
-    letter-spacing: 1px;
-  }
-  
-  .text span {
-    margin: 5px;
   }
   
   .credit {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    color: #FF3838;
+    margin: 0.5rem;
+    opacity: 0;
+    animation: credits 5s ease forwards;
+  }
+  
+  @keyframes credits {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
   }
   
 
