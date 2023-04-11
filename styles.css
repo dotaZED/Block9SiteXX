@@ -17,104 +17,37 @@ body {
 }
 
 /* Styling the navigation bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  padding: 0 20px;
+.navbar {
+  background-color: #9146ff;
 }
 
-.navbar-logo a {
+.navbar-brand {
   color: #fff;
-  font-size: 24px;
   font-weight: bold;
-  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-.navbar-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.navbar-nav {
+  margin-left: auto;
 }
 
-.navbar-links li {
-  margin: 0 10px;
-}
-
-.navbar-links a {
+.nav-link {
   color: #fff;
-  text-decoration: none;
-  font-size: 16px;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
 }
 
-.navbar-links a:hover {
-  color: #00d9ff;
+.nav-link:hover {
+  color: #f5f5f5;
 }
 
-.navbar-menu {
-  display: none;
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3e%3cpath stroke="%23fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
 }
 
-.navbar-menu span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-}
 
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    display: none;
-  }
-
-  .navbar-menu {
-    display: block;
-    cursor: pointer;
-  }
-
-  .navbar-menu.active ~ .navbar-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #222;
-    padding: 20px;
-  }
-
-  .navbar-links li {
-    margin: 10px 0;
-  }
-
-  .navbar-links a {
-    font-size: 20px;
-  }
-
-  .navbar-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .navbar-menu.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar-menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-}
 
   
   
