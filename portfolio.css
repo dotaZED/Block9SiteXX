@@ -309,10 +309,10 @@
     }
 }
 h1 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    -webkit-text-stroke: 1px #ffd700; /* add this line for Safari */
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-align: justify;
 }
