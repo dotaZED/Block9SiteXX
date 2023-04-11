@@ -16,12 +16,7 @@ body {
   background-color: #222;
 }
 
-/* Styling the navigation bar */
-Sure! Here's an example of how you can modify the CSS of the previous code to make it similar to the Bootstrap navbar:
 
-css
-Copy code
-/* Add Bootstrap's default navbar styles */
 .navbar {
   position: relative;
   display: flex;
