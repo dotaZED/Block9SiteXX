@@ -17,47 +17,74 @@ body {
 }
 
 /* Styling the navigation bar */
-/* Add custom styles to the navbar */
+Sure! Here's an example of how you can modify the CSS of the previous code to make it similar to the Bootstrap navbar:
+
+css
+Copy code
+/* Add Bootstrap's default navbar styles */
 .navbar {
-  background-color: #9146ff; /* sets the background color to Twitch purple */
-  color: #ffffff; /* sets the font color to white */
-  height: 60px; /* sets the height of the navbar */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-brand {
-  font-size: 1.5rem; /* sets the font size of the brand */
-  font-weight: bold; /* makes the brand text bold */
-  margin-left: 20px; /* adds some margin to the left of the brand */
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
 }
 
 .nav-link {
-  color: #ffffff; /* sets the font color to white */
-  font-size: 1.2rem; /* sets the font size of the links */
-  text-transform: uppercase; /* makes the link text uppercase */
-  margin-right: 20px; /* adds some margin to the right of each link */
+  display: block;
+  padding: 0.5rem 1rem;
+  color: rgba(255,255,255,0.5);
+  font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .nav-link:hover {
-  color: #f5f5f5; /* sets the font color to a lighter shade of white when hovered over */
+  color: #fff;
 }
 
+/* Change the background and font colors to match Twitch's branding */
+.navbar {
+  background-color: #9146ff;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* Add styles for the hamburger icon */
 .navbar-toggler {
-  color: #ffffff; /* sets the color of the hamburger icon to white */
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 0.25rem;
 }
 
 .navbar-toggler-icon {
-  background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3e%3cpath stroke="%23fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e'); /* sets the hamburger icon to white */
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    height: auto; /* makes the navbar height auto on smaller screens */
-  }
-
-  .nav-link {
-    margin-right: 0; /* removes the margin to the right of each link on smaller screens */
-    margin-bottom: 10px; /* adds some margin below each link on smaller screens */
-  }
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 
