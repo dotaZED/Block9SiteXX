@@ -1,85 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Example Page</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f7f7f7;
-			margin: 0;
-			padding: 0;
-		}
-
-		header {
-			background-color: #333;
-			color: white;
-			padding: 10px;
-			text-align: center;
-		}
-
-		.container {
-			display: flex;
-			justify-content: space-between;
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 20px;
-		}
-
-		.form {
-			flex-basis: 30%;
-			background-color: white;
-			padding: 20px;
-			border-radius: 5px;
-			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-		}
-
-		.image-collage {
-			flex-basis: 70%;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			align-items: center;
-			background-color: #f7f7f7;
-			padding: 20px;
-			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-		}
-
-		.image-collage img {
-			width: 32%;
-			height: auto;
-			margin-bottom: 20px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+  
 </head>
 <body>
-	<header>
-		<h1>Contact Us</h1>
-	</header>
-	<div class="container">
-		<div class="form">
-			<h2>Contact Us</h2>
-			<form action="submit-form.php" method="POST">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required><br><br>
-
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required><br><br>
-
-				<label for="phone">Phone:</label>
-				<input type="tel" id="phone" name="phone" required><br><br>
-
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea><br><br>
-
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-		<div class="image-collage">
-			<img src="https://unsplash.com/photos/WkfDrhxDMC8 alt="Image 1">
-			<img src="https://unsplash.com/photos/p0j-mE6mGo4" alt="Image 2">
-			<img src="https://unsplash.com/photos/WkfDrhxDMC8" alt="Image 3">
-			
-		</div>
-	</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <hr style="background-color:black;">
+    <hr>
+    <div class="banner">
+        <div class="collage">
+          <img src="https://images.unsplash.com/photo-1598057327499-d4189dede036?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80">
+          <img src="https://images.unsplash.com/photo-1531569696811-22fd21449dd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80">
+          <img src="https://images.unsplash.com/photo-1519564463853-62962823fb39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2833&q=80">
+          <img src="https://images.unsplash.com/photo-1569917761723-0a168f30c01c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80">
+          <img src="https://images.unsplash.com/photo-1624355834445-ec4f2ee30e5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+          <img src="https://images.unsplash.com/photo-1502675135487-e971002a6adb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80">
+        </div>
+      </div>
+      
+   <h2>Contact US</h2>
+   <div class="contact-form">
+	<h2>Contact Me</h2>
+	<form>
+	  <div class="form-group">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+	  </div>
+	  <div class="form-group">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+	  </div>
+	  <div class="form-group">
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea>
+	  </div>
+	  <button type="submit">Submit</button>
+	</form>
+  </div>
+  
+      
+   <section>
+      <h2>Profile</h2>
+      <p>Check out my <a href="#">LinkedIn profile</a>.</p>
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.JUV3COHIgdNQegdFpcqbBwHaHa%26pid%3DApi%26h%3D160&f=1&ipt=1775d95047e68c410b04f6fbb037222f8dfd7c8ed63e5307d7cb8457ed2f163e&ipo=images" alt="Spiderman movie poster">
+    </section>
+  <footer> WIZARD OSIAN</footer>
 </body>
 </html>
