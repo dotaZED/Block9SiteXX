@@ -18,35 +18,33 @@ body {
 
 /* Styling the navigation bar */
 .navbar {
-  background-color: #9146ff;
+  background-color: #9146ff; /* sets the background color to Twitch purple */
+  color: #ffffff; /* sets the font color to white */
+  display: flex; /* makes the navbar a flex container */
+  justify-content: space-between; /* centers the content of the navbar */
+  align-items: center; /* centers the content vertically */
+  padding: 10px; /* adds some padding to the navbar */
 }
 
 .navbar-brand {
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.navbar-nav {
-  margin-left: auto;
+  font-size: 1.5rem; /* sets the font size of the brand */
+  font-weight: bold; /* makes the brand text bold */
 }
 
 .nav-link {
-  color: #fff;
-  font-size: 1.2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  text-transform: uppercase;
+  color: #ffffff; /* sets the font color to white */
+  font-size: 1.2rem; /* sets the font size of the links */
+  text-transform: uppercase; /* makes the link text uppercase */
+  margin-left: 1rem; /* adds some margin to the left of each link */
 }
 
 .nav-link:hover {
-  color: #f5f5f5;
+  color: #000000; /* sets the font color to black when hovered over */
 }
 
 .navbar-toggler-icon {
-  background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3e%3cpath stroke="%23fff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3e%3cpath stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e'); /* sets the hamburger icon to white */
 }
-
 
 
   
